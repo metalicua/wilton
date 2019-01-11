@@ -1,5 +1,9 @@
 .header {
+    
+    width: 100%;
+    background-color: $color-opacity-gray;
     box-shadow:         -1px 2px 1px 0px rgba(0, 0, 0, 0.14);
+    z-index: 120;
     
     &__top {
         background: $color-ligthgray;
@@ -80,8 +84,8 @@
 
         &__mbutton {
             position: absolute;
-            top: 25%;
-            right: 5%;
+            top: 4px;
+            right: 5px;
             width: 34px;
             height: 34px;
             border: none;
@@ -144,4 +148,8 @@
     .mobile-menu {
         z-index: 120;
     }
+}
+
+.fixed {
+    position: fixed;
 }
