@@ -5,6 +5,8 @@ $(document).ready(function(){
     $('.js_slider').slick({
         dots: true,
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         prevArrow: $('.js_arrow_left'),
         nextArrow: $('.js_arrow_right'),
     });
