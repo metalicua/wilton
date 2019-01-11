@@ -1,0 +1,117 @@
+.footer {
+
+    &__row {
+        padding: 50px 0;
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            padding: 15px 0;
+        }
+    }
+
+    &__title {
+        position: relative;
+        color: $color-darkgray;
+    }
+
+    &__list {
+        margin-right: 10px;
+        list-style: none;
+    }
+
+    &__link {
+        font-size: 0.75vw;
+        color: $color-gray;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $color-violet;
+        }
+
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+
+    &__button {
+        display: none;
+        position: absolute;
+        right: 1%;
+        bottom: 5%;
+        padding: 5px 13px;
+        
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__menu {
+        display: none;
+        position: relative;
+        cursor: pointer;
+        
+
+        &:before {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 15px;
+            background-color: $color-violet;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 3px;
+            position: absolute;
+            top: 6px;
+            left: -6px;
+            background-color: $color-violet;
+        }
+
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            display: block;
+            position: absolute;
+            top: 6px;
+            right: 10px;
+
+            &:active {
+                transition: $transition-base;
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+.contact {
+    margin-right: 15px;
+}
+
+.copiright-desctop {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.75vw;
+    text-transform: uppercase;
+    color: $color-gray;
+    background-color: $color-ligthgray;
+
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.copiright-mobile {
+    display: none;
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        padding: 10px 0;
+        text-align: center;
+        display: block;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $color-gray;
+        background-color: $color-ligthgray;
+    }
+}
+
+.show {
+    display: block;
+}

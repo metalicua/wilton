@@ -1,0 +1,14 @@
+.btn {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-white;
+    background-color: $color-violet;
+    border-radius: 4px;
+
+    &:hover {
+        transition: $transition-base;
+        color: $color-violet;
+        background-color: $color-white;
+    }
+}

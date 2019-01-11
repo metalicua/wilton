@@ -1,0 +1,218 @@
+.gallery {
+
+    &__title {
+        position: relative;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-darkgray;
+        background-color: $color-ligthgray;
+
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            padding: 15px 0;
+            display: block;
+            text-align: center;
+        }
+    } 
+
+    &__link {
+        position: absolute;
+        right: 3%;
+        font-size: 0.75vw;
+        text-transform: uppercase;
+        color: $color-gray;       
+
+        &:hover {
+            color: $color-violet;
+
+            &:after {
+                border-top: 2px solid $color-violet;
+            border-right: 2px solid $color-violet;
+            }
+        }
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            position: static;
+            font-size: 12px;
+        }
+
+    }
+
+    &__row {
+        padding-bottom: 20px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            padding-bottom: 0;
+        }
+
+    }
+
+    &__col {
+        margin-right: 20px;
+        position: relative;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            margin-right: 0;
+            padding-bottom: 15px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__discription {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-transform: uppercase;
+        color: $color-darkgray;
+        background-color: $color-opacity-gray;
+    }
+
+    &__video {
+        padding: 15px 20px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: $color-white;
+
+        h2 {
+            text-transform: uppercase;
+        }
+        
+
+        span {
+            font-family: $font-Yanone;
+            font-size: 1.9vw;
+            font-weight: 200;
+            color: $color-white;
+        }
+
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            padding: 10px;
+            bottom: 10px;
+
+            h2 {
+                line-height: 1;
+            }
+            
+            span {
+                font-size: 20px;
+                line-height: 1;
+            }
+        }
+    }
+
+    &__box {
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn {
+        padding: 8px 14px;
+
+        @media all and (min-width: 320px) and (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+}   
+
+.row-wrapper {
+    margin-bottom: 75px;
+
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.image-header {
+    padding: 25px 0;
+    font-family: $font-Yanone;
+    text-align: center;
+    color: $color-white;
+
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        cursor: pointer;
+    }
+
+}
+
+.violet {
+    background-color: $color-violet;
+}
+
+.light-pink {
+    background-color: $colir-lightpink;
+}
+
+.pink-bg {
+    background-color: $color-pink;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+    .mob-col {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.mobile-row {
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.mobile-col {
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        margin-right: 15px;
+        width: 50%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.mobile-title {
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.m-galery-discription {
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.dontshow {
+    @media all and (min-width: 320px) and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.show {
+    display: block;
+}

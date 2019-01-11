@@ -1,0 +1,28 @@
+// Extended Files
+
+// Common
+@import 'common/variables';
+@import 'common/typography';
+@import 'common/main';
+
+
+// Custom
+
+@import 'custom/dots';
+
+//Elements 
+@import 'elements/navigation';
+@import 'elements/search_form';
+@import 'elements/promo';
+@import 'elements/btn';
+@import 'elements/social';
+
+
+// Parts
+@import 'parts/header';
+@import 'parts/slider';
+@import 'parts/project';
+@import 'parts/school';
+@import 'parts/gallery';
+@import 'parts/subscribe';
+@import 'parts/footer';

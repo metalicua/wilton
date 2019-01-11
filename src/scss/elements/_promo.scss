@@ -1,0 +1,34 @@
+.promo {
+
+    &__container {
+        margin-bottom: 60px;
+        background-color: $color-ligthgray;
+	    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    &__box {
+        padding: 10px 0;
+        font-size: 16px;
+        text-align: center;
+        color: $color-darkgray;
+    }
+}
+
+.pink {
+	text-transform: uppercase;
+	color: $color-pink;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+    .promo {
+
+        &__container {
+            margin-bottom: 10px;
+            box-shadow: none;
+        }
+        
+        &__box {
+            font-size:  14px;
+        }
+    }
+}

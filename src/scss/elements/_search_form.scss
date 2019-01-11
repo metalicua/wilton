@@ -1,0 +1,27 @@
+.search-form {
+	position: relative;
+}
+
+input[placeholder] {
+	width: 225px;
+	padding: 11px;
+	font-family: 'Brandon Grotesque Bold';
+	font-size: 12px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	border: 1px solid $color-stronggray;
+	border-radius: 4px;
+	color: $color-gray;
+}
+
+.form-button {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background: $color-violet;
+	border-radius: 2px;
+	cursor: pointer;
+} 

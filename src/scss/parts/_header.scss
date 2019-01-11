@@ -1,0 +1,147 @@
+.header {
+    box-shadow:         -1px 2px 1px 0px rgba(0, 0, 0, 0.14);
+    
+    &__top {
+        background: $color-ligthgray;
+    }
+
+    &__mobcontainer {
+        display: none;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        padding: 15px;
+    }
+}
+
+.header-top {
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__box-l {
+        display: flex;
+    }
+
+    &__box-r {
+        display: flex;
+    }
+
+    &__element {
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 1.5;
+        color: #969696;
+
+        svg {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            color: $color-violet;
+        }
+    }
+}
+
+.navigation-mobile {
+    display: none;
+}
+
+.form {
+    &__mobform {
+        display: none;
+    }
+
+    @media all and (min-width: 320px) and (max-width: 768px) {
+            
+        &__mobform {
+            display: block;
+            position: relative;
+            padding: 12px 0;
+            background-color: $color-violet;
+        }
+
+        &__minput[placeholder] {
+            width: 100%;
+            font-size: 12px;
+        }
+
+        &__mbutton {
+            position: absolute;
+            top: 25%;
+            right: 5%;
+            width: 34px;
+            height: 34px;
+            border: none;
+            background: $color-violet;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+    .header {
+
+        &__top {
+            display: none;
+        }
+
+        &__container {
+            display: none;
+        }
+
+        &__mobcontainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__moblink {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: $color-gray;
+
+            &:hover {
+                color: $color-violet;
+            }
+        }
+
+        &__right-box {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .marker {
+       
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -37px;
+            left: 0;
+            border: 10px solid transparent;
+            border-bottom: 15px solid $color-violet;
+            display: block;
+        }
+    }
+
+    .mobile-menu {
+        z-index: 120;
+    }
+}
